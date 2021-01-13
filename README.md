@@ -10,16 +10,26 @@ Google allows its search trend data to be filtered and exported. This project us
 
 	Results and Efficacy
 The results of the regression emphasize the strengths and weaknesses of the model and the assumption behind it. The regression is able to predict 91.1% (Adjusted R Square) of the variation in new COVID-19 cases. According to this model, new COVID-19 cases are a function of the Google Trend searches “Cough”, “Fever”, “Headache”, “Diarrhea”, and “Covid Symptoms”.
+
+
 COVID-19 Cases = β_(0 )+"Cough"*X_1+"Fever"*X_2+"Headache"*X_3+"Diarrhea"*X_4+〖"Covid Symptoms"*X〗_5
-Predictive Variable	Coefficient
-Cough	41,370
-Fever	-42,860
-Headache	29,980
-Diarrhea	-31,060
-Covid Symptoms	13,990
+
+| Predictive Variable | Coefficients|
+|---------------------|:-----------:|
+| Cough	      	      |    41,370   |
+| Fever               |   -42,860   |
+| Headache 	      |    29,980   |
+| Diarrhea	      |	  -31,060   |
+| Covid Symptoms      |    13,990   |
 
 The keywords are the most common symptoms for COVID-19, established by the CDC. The term “Covid Symptoms” is presumably a popular query to find out if an individual has symptoms that point towards the Coronavirus and should therefore get tested. The results of the regression show that the keywords “cough”, “headache”, and “Covid Symptoms” are positively correlated with new cases, whereas the keywords “fever” and “diarrhea” are negatively correlated. Notably, all coefficients are statistically significant at the traditional confidence levels, except for “headache” which is significant at the 5% level. This suggests that the predictors are meaningful to explain the variation in the model. However, the negative coefficients of the keyword “cough” and “fever” indicate that for every unit change in the Google Trend index, new COVID-19 cases decrease by 42,860 and 31,060, respectively. This result goes against the heuristic that with an increase of Google searches for the symptom, COVID-19 cases increase. Hence, the initial assumption ought to be reevaluated and an alternative model can be developed. Nevertheless, the regression can be used to predict new infections and can explain a very large portion of the variation in the data. To predict new COVID-19 cases for Monday, December 14th, 2020, Google Trend numbers from 7 days before this date can be used in the model. In this case, the Google index values for the symptom keywords from Monday,  December 7th are predicting cases for the following week.
- 〖COVID-19 Cases〗_(12-14-2020 )= β_(0 )+"Cough"*26+"Fever"*40+Headache*32+Diarrhea*26+Covid Symptoms*92
+
+
+〖COVID-19 Cases〗_(12-14-2020 )= β_(0 )+"Cough"*26+"Fever"*40+Headache*32+Diarrhea*26+Covid Symptoms*92
+
+
 This model yields a prediction of 179,461 cases for Monday, December 14th, 2020.
+
+
 	Conclusions
 The model is a good predictor of new COVID-19 infections and explains 91.1% of the variation. However, it does not confirm the initial assumption of a positive relationship between the predictors and the outcome. Conclusions for causality between the Google Trend searches, and the predicted new cases cannot be drawn. The model’s omitted variable bias only allows to create relationships of association and predictions ought to be treated and interpreted accordingly. Other factors and omitted variables and circumstances can lead to a completer and more sophisticated model. It is worth noting that the longer the pandemic lasts, the more likely the general population is aware of the symptoms and therefore less likely to search Google when they develop the symptoms. Concluding, this project predicts COVID-19 cases with some limitations and needs more work to explore the relationship between Google Trend searches and real world COVID-19 trends further.
