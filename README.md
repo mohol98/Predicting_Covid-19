@@ -5,6 +5,8 @@ This project aims to investigate if COVID-19 symptom searches on Google can pred
 	Methods and Data
 To investigate the relationship between COVID-19 Google searches and new infections, a linear regression model is used. The relationship between the Google searches and new infection cases ought to be linear, hence no other transformations are increasing the predictive power of the model. The following graph depicts the relationship between the keyword “Covid symptoms” and new infections in the US, according to the CDC.
 
+![Linear Model Covid Symptoms vs New Infections Scatterplot](scatterplot.png)
+
 The linear relationship between the Google Trend popularity index (on a scale from 0-100) and new COVID-19 is clearly linear and an OLS model should allow us to draw a picture of the relationship between symptom related searches and new cases.
 Google allows its search trend data to be filtered and exported. This project uses Google’s Python Collaboratory tool to pull the data from Google trends and transform it into the right data frame to run OLS regressions. The advantage of this method is that the data timeframe can be adjusted quickly when rerunning the script to validate the model. The new COVID-19 infection data is downloaded from the CDC Covid Data Tracker which is daily updated data and considered the most reliable source for this kind of data. The data was aggregated into weekly data to make a comparison easier and more reliable. Google Trend data is instant, whereas the new COVID-19 infections data is delayed due to the time lag from testing and reporting the numbers. Therefore, using a time lag of a week (t-1) has shown to yield the best regression models.
 
