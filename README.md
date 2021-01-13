@@ -1,5 +1,9 @@
 # Predicting Covid-19 Infections
 
+
+Check out how I walk through my code on my YouTube Channel: https://www.youtube.com/watch?v=pr1Su6IHHmI&t=286s
+
+
 	Introduction
 This project aims to investigate if COVID-19 symptom searches on Google can predict new infections with the virus in the United States. With the ongoing pandemic, forecasting new COVID-19 infections could be extremely valuable to everyone, especially legislators, companies, and high-risk individuals. Predicting the numbers of new infections is very intricate and complicated because the virus and its spread is not entirely clear since it has been discovered only recently and not much research has been established. The underlying assumption and hypothesis for this project is that if people experience symptoms of COVID-19, they will use Google to find out if their symptoms match the criteria for COVID-19 symptoms. People experiencing symptoms and searching for them on Google will then go on to get tested positive for the Coronavirus. If this assumption holds, COVID-19 searches on Google can have predictive power to forecast new infections across the US.
 	Methods and Data
